@@ -22,19 +22,30 @@
             color: white;
         }
         .content {
-            margin: 20px;
+            width: 90%; 
+            max-width: 800px; 
+            margin: 20px auto; 
             text-align: justify;
         }
         .profile-pic {
             border-radius: 10%;
-            width: 5px;
-            height: 5px;
-            object-fit: fill;
+            width: 100%;
+            height: auto;
+            object-fit: cover;
             margin-top: 20px;
         }
         .about-text {
             margin-top: 30px;
-            font-size: 25px;
+            font-size: 1em;
+        }
+        @media (max-width: 600px) {
+            .header {
+                padding: 15px;
+                font-size: 1.5em;
+            }
+            .about-text {
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
@@ -43,7 +54,7 @@
         <h1>About Me</h1>
     </div>
     <div class="content">
-        <span class="image featured"><img src="images/ME 2.jpeg" alt="" /></span>
+        <span class="image featured"><img src="images/me 3.jpg" alt="" /></span>
         
         <div class="about-text">
             <p>Hello 👋🏽, I am Ayodele AKANJI..</p>
